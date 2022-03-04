@@ -1,0 +1,13 @@
+#Xcode temporary files
+
+*~.nib
+
+#Temporary & build files
+.DS_Store
+*.lock
+*.swp
+profile
+build/
+
+#CocoaPods
+/Pods
