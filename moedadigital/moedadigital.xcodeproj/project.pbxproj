@@ -62,7 +62,6 @@
 				8298D35827D686EF00F2E49B /* Models */,
 				8298D35927D686EF00F2E49B /* ViewModel */,
 				8298D35C27D688AF00F2E49B /* Resources */,
-				8298D34827D4505C00F2E49B /* Info.plist */,
 			);
 			path = moedadigital;
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 		8298D35C27D688AF00F2E49B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8298D34827D4505C00F2E49B /* Info.plist */,
 				8298D34327D4505C00F2E49B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -338,7 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = moedadigital/Info.plist;
+				INFOPLIST_FILE = moedadigital/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -366,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = moedadigital/Info.plist;
+				INFOPLIST_FILE = moedadigital/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
