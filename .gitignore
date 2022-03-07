@@ -1,9 +1,11 @@
+
 #Xcode temporary files
 
 *~.nib
 
 #Temporary & build files
 .DS_Store
+*.xcuserstate
 *.lock
 *.swp
 profile
