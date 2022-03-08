@@ -56,15 +56,63 @@
 		8298D33927D4505900F2E49B /* moedadigital */ = {
 			isa = PBXGroup;
 			children = (
-				8298D33A27D4505900F2E49B /* AppDelegate.swift */,
-				8298D33C27D4505900F2E49B /* SceneDelegate.swift */,
-				8298D33E27D4505900F2E49B /* ViewController.swift */,
-				8298D34027D4505900F2E49B /* Main.storyboard */,
-				8298D34327D4505C00F2E49B /* Assets.xcassets */,
-				8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */,
-				8298D34827D4505C00F2E49B /* Info.plist */,
+				8298D35727D686EF00F2E49B /* Helpers */,
+				8298D35B27D6881600F2E49B /* Controllers */,
+				8298D35A27D6875300F2E49B /* Views */,
+				8298D35827D686EF00F2E49B /* Models */,
+				8298D35927D686EF00F2E49B /* ViewModel */,
+				8298D35C27D688AF00F2E49B /* Resources */,
 			);
 			path = moedadigital;
+			sourceTree = "<group>";
+		};
+		8298D35727D686EF00F2E49B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8298D35827D686EF00F2E49B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8298D35927D686EF00F2E49B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8298D35A27D6875300F2E49B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8298D34027D4505900F2E49B /* Main.storyboard */,
+				8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8298D35B27D6881600F2E49B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8298D33C27D4505900F2E49B /* SceneDelegate.swift */,
+				8298D33A27D4505900F2E49B /* AppDelegate.swift */,
+				8298D33E27D4505900F2E49B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8298D35C27D688AF00F2E49B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8298D34827D4505C00F2E49B /* Info.plist */,
+				8298D34327D4505C00F2E49B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = moedadigital/Info.plist;
+				INFOPLIST_FILE = moedadigital/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = moedadigital/Info.plist;
+				INFOPLIST_FILE = moedadigital/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
