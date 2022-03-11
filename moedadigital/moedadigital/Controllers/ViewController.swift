@@ -34,3 +34,21 @@ class ViewController: UIViewController {
         coinToFavoriteViewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -245).isActive = true
     }
 }
+
+@propertyWrapper
+public struct UseAutoLayout<T: UIView> {
+    public var wrappedValue: T {
+        didSet {
+            setAutoLayout()
+        }
+    }
+    
+    public init(wrappedValue: T) {
+        self.wrappedValue = wrappedValue
+        setAutoLayout()
+    }
+    
+    func setAutoLayout(){
+        wrappedValue.translatesAutoresizingMaskIntoConstraints = false
+    }
+}
