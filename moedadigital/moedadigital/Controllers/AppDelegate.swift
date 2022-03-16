@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = ViewController()
         window.makeKeyAndVisible()
         self.window = window
+        
+        APICaller.shared.getAllIcons()
+        
         return true
         // Override point for customization after application launch.
     }
