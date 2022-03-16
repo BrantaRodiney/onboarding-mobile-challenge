@@ -13,6 +13,8 @@
 		8298D34227D4505900F2E49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34027D4505900F2E49B /* Main.storyboard */; };
 		8298D34427D4505C00F2E49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34327D4505C00F2E49B /* Assets.xcassets */; };
 		8298D34727D4505C00F2E49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */; };
+		FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA93E27E229C9007357F2 /* APICaller.swift */; };
+		FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94027E22A32007357F2 /* MoedasModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8298D34327D4505C00F2E49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8298D34627D4505C00F2E49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8298D34827D4505C00F2E49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6BA93E27E229C9007357F2 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		FE6BA94027E22A32007357F2 /* MoedasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		8298D35727D686EF00F2E49B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FE6BA93E27E229C9007357F2 /* APICaller.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 		8298D35827D686EF00F2E49B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE6BA94027E22A32007357F2 /* MoedasModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 				8298D33F27D4505900F2E49B /* ViewController.swift in Sources */,
 				8298D33B27D4505900F2E49B /* AppDelegate.swift in Sources */,
 				8298D33D27D4505900F2E49B /* SceneDelegate.swift in Sources */,
+				FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */,
+				FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
