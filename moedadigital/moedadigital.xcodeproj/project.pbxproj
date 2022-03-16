@@ -15,6 +15,7 @@
 		8298D34727D4505C00F2E49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */; };
 		FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA93E27E229C9007357F2 /* APICaller.swift */; };
 		FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94027E22A32007357F2 /* MoedasModel.swift */; };
+		FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8298D34827D4505C00F2E49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6BA93E27E229C9007357F2 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		FE6BA94027E22A32007357F2 /* MoedasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasModel.swift; sourceTree = "<group>"; };
+		FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8298D35827D686EF00F2E49B /* Models */,
 				8298D35927D686EF00F2E49B /* ViewModel */,
 				8298D35C27D688AF00F2E49B /* Resources */,
+				FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */,
 			);
 			path = moedadigital;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				8298D33F27D4505900F2E49B /* ViewController.swift in Sources */,
 				8298D33B27D4505900F2E49B /* AppDelegate.swift in Sources */,
+				FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */,
 				8298D33D27D4505900F2E49B /* SceneDelegate.swift in Sources */,
 				FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */,
 				FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */,
