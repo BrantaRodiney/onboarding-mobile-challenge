@@ -16,6 +16,8 @@
 		8298D38D27E3985000F2E49B /* AdicionadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38C27E3985000F2E49B /* AdicionadasViewController.swift */; };
 		8298D38F27E3988300F2E49B /* MoedasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38E27E3988300F2E49B /* MoedasView.swift */; };
 		8298D39527E3AD8A00F2E49B /* UseAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D39427E3AD8A00F2E49B /* UseAutoLayout.swift */; };
+		8298D39827E3B02400F2E49B /* CoinToFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D39627E3B02300F2E49B /* CoinToFavorite.swift */; };
+		8298D39927E3B02400F2E49B /* CoinTradeVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D39727E3B02400F2E49B /* CoinTradeVolume.swift */; };
 		FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA93E27E229C9007357F2 /* APICaller.swift */; };
 		FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94027E22A32007357F2 /* MoedasModel.swift */; };
 		FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */; };
@@ -33,6 +35,8 @@
 		8298D38C27E3985000F2E49B /* AdicionadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionadasViewController.swift; sourceTree = "<group>"; };
 		8298D38E27E3988300F2E49B /* MoedasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasView.swift; sourceTree = "<group>"; };
 		8298D39427E3AD8A00F2E49B /* UseAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAutoLayout.swift; sourceTree = "<group>"; };
+		8298D39627E3B02300F2E49B /* CoinToFavorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinToFavorite.swift; sourceTree = "<group>"; };
+		8298D39727E3B02400F2E49B /* CoinTradeVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinTradeVolume.swift; sourceTree = "<group>"; };
 		FE6BA93E27E229C9007357F2 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		FE6BA94027E22A32007357F2 /* MoedasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasModel.swift; sourceTree = "<group>"; };
 		FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		8298D35A27D6875300F2E49B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8298D39627E3B02300F2E49B /* CoinToFavorite.swift */,
+				8298D39727E3B02400F2E49B /* CoinTradeVolume.swift */,
 				8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -212,9 +218,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8298D38B27E3981300F2E49B /* MoedasViewController.swift in Sources */,
+				8298D39927E3B02400F2E49B /* CoinTradeVolume.swift in Sources */,
 				8298D38D27E3985000F2E49B /* AdicionadasViewController.swift in Sources */,
 				8298D33F27D4505900F2E49B /* TabBarController.swift in Sources */,
 				8298D33B27D4505900F2E49B /* AppDelegate.swift in Sources */,
+				8298D39827E3B02400F2E49B /* CoinToFavorite.swift in Sources */,
 				FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */,
 				8298D33D27D4505900F2E49B /* SceneDelegate.swift in Sources */,
 				8298D38F27E3988300F2E49B /* MoedasView.swift in Sources */,
