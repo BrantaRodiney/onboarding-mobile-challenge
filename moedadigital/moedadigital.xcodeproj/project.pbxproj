@@ -13,6 +13,9 @@
 		8298D34227D4505900F2E49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34027D4505900F2E49B /* Main.storyboard */; };
 		8298D34427D4505C00F2E49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34327D4505C00F2E49B /* Assets.xcassets */; };
 		8298D34727D4505C00F2E49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */; };
+		8298D38527E2F02D00F2E49B /* CoinTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38427E2F02D00F2E49B /* CoinTabBarController.swift */; };
+		8298D38727E2F7CC00F2E49B /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38627E2F7CC00F2E49B /* CoinsViewController.swift */; };
+		8298D38927E2F92700F2E49B /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38827E2F92700F2E49B /* FavoriteViewController.swift */; };
 		FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA93E27E229C9007357F2 /* APICaller.swift */; };
 		FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94027E22A32007357F2 /* MoedasModel.swift */; };
 		FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */; };
@@ -27,6 +30,9 @@
 		8298D34327D4505C00F2E49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8298D34627D4505C00F2E49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8298D34827D4505C00F2E49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8298D38427E2F02D00F2E49B /* CoinTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTabBarController.swift; sourceTree = "<group>"; };
+		8298D38627E2F7CC00F2E49B /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
+		8298D38827E2F92700F2E49B /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		FE6BA93E27E229C9007357F2 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		FE6BA94027E22A32007357F2 /* MoedasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasModel.swift; sourceTree = "<group>"; };
 		FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				8298D33C27D4505900F2E49B /* SceneDelegate.swift */,
 				8298D33A27D4505900F2E49B /* AppDelegate.swift */,
 				8298D33E27D4505900F2E49B /* ViewController.swift */,
+				8298D38427E2F02D00F2E49B /* CoinTabBarController.swift */,
+				8298D38627E2F7CC00F2E49B /* CoinsViewController.swift */,
+				8298D38827E2F92700F2E49B /* FavoriteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +210,9 @@
 				8298D33D27D4505900F2E49B /* SceneDelegate.swift in Sources */,
 				FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */,
 				FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */,
+				8298D38527E2F02D00F2E49B /* CoinTabBarController.swift in Sources */,
+				8298D38727E2F7CC00F2E49B /* CoinsViewController.swift in Sources */,
+				8298D38927E2F92700F2E49B /* FavoriteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
