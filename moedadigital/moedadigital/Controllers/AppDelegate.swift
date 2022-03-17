@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         
-        APICaller.shared.getAllIcons()
+        //APICaller.shared.getAllIcons()
         
         return true
         // Override point for customization after application launch.
