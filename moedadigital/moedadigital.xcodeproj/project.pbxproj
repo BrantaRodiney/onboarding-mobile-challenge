@@ -15,6 +15,7 @@
 		8298D38B27E3981300F2E49B /* MoedasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38A27E3981300F2E49B /* MoedasViewController.swift */; };
 		8298D38D27E3985000F2E49B /* AdicionadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38C27E3985000F2E49B /* AdicionadasViewController.swift */; };
 		8298D38F27E3988300F2E49B /* MoedasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D38E27E3988300F2E49B /* MoedasView.swift */; };
+		8298D39527E3AD8A00F2E49B /* UseAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D39427E3AD8A00F2E49B /* UseAutoLayout.swift */; };
 		FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA93E27E229C9007357F2 /* APICaller.swift */; };
 		FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94027E22A32007357F2 /* MoedasModel.swift */; };
 		FE6BA94327E230AA007357F2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 		8298D38A27E3981300F2E49B /* MoedasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasViewController.swift; sourceTree = "<group>"; };
 		8298D38C27E3985000F2E49B /* AdicionadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionadasViewController.swift; sourceTree = "<group>"; };
 		8298D38E27E3988300F2E49B /* MoedasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasView.swift; sourceTree = "<group>"; };
+		8298D39427E3AD8A00F2E49B /* UseAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAutoLayout.swift; sourceTree = "<group>"; };
 		FE6BA93E27E229C9007357F2 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		FE6BA94027E22A32007357F2 /* MoedasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedasModel.swift; sourceTree = "<group>"; };
 		FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		8298D33927D4505900F2E49B /* moedadigital */ = {
 			isa = PBXGroup;
 			children = (
+				8298D39327E3AD6A00F2E49B /* Utils */,
 				8298D35727D686EF00F2E49B /* Helpers */,
 				8298D35B27D6881600F2E49B /* Controllers */,
 				8298D35A27D6875300F2E49B /* Views */,
@@ -128,6 +131,14 @@
 				8298D34327D4505C00F2E49B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8298D39327E3AD6A00F2E49B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8298D39427E3AD8A00F2E49B /* UseAutoLayout.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 				8298D33D27D4505900F2E49B /* SceneDelegate.swift in Sources */,
 				8298D38F27E3988300F2E49B /* MoedasView.swift in Sources */,
 				FE6BA93F27E229C9007357F2 /* APICaller.swift in Sources */,
+				8298D39527E3AD8A00F2E49B /* UseAutoLayout.swift in Sources */,
 				FE6BA94127E22A32007357F2 /* MoedasModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
