@@ -22,7 +22,7 @@ final class APICaller{
 
   private struct Constants{
 
-    static let APIKey = "A11EF81F-7FDB-4B2A-AF21-6928ED8BBA60"
+    static let APIKey = "D202342D-AA18-4966-A29F-21B09FC5C9AD"
 
     static let assetsEndPoint = "https://rest-sandbox.coinapi.io/v1/assets/"
       
