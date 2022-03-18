@@ -19,6 +19,7 @@ class CoinToFavoriteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setCoinToFavoriteConstraints()
+        
     }
         
     private func setCoinToFavoriteConstraints()
@@ -35,3 +36,5 @@ class CoinToFavoriteViewController: UIViewController {
 protocol ViewControllerDelegate: AnyObject {
     func selectedCell(row: Int)
 }
+
+

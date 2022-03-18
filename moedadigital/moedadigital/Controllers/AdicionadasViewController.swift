@@ -14,7 +14,7 @@ class AdicionadasViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -23,7 +23,7 @@ class AdicionadasViewController: UIViewController, UICollectionViewDelegate, UIC
         
         cell.backgroundColor = .init(red: 141.0/255.0, green: 149.0/255.0, blue: 98.0/255.0, alpha: 1.0)
         cell.layer.cornerRadius = 5
-    
+       
         return cell
     }
     

@@ -29,6 +29,8 @@ class MoedasView: UIView {
 
     }()
     
+   
+    
     func getTimeStampDateToString() -> String
     {
         let date = Date(timeIntervalSinceNow: 0)
@@ -59,6 +61,7 @@ class MoedasView: UIView {
     self.addSubview(moedaLabel)
     self.addSubview(dataLabel)
   }
+
 
   private func definirConstraints(){
     NSLayoutConstraint.activate([

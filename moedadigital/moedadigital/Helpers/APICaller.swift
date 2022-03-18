@@ -78,7 +78,6 @@ final class APICaller{
       guard let data = data, error == nil else { return }
 
       
-
       do{
 
         self?.icons = try JSONDecoder().decode([Icon].self, from: data)

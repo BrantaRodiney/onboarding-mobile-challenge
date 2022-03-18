@@ -18,12 +18,14 @@ class MoedasViewController: UIViewController {
     // criando o SearchBar
     let searchController = UISearchController(searchResultsController: nil)
     
+    
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CryptoTableViewCell.self,
                            forCellReuseIdentifier: CryptoTableViewCell.identifier)
         return tableView
     }()
+    
     
     private var viewModels = [CryptoTableViewCellViewModel]()
     
@@ -45,6 +47,8 @@ class MoedasViewController: UIViewController {
         tableView.delegate = self
         
         getDataFromApi()
+        
+        
         
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true

@@ -81,7 +81,6 @@
 				8298D35827D686EF00F2E49B /* Models */,
 				8298D35927D686EF00F2E49B /* ViewModel */,
 				8298D35C27D688AF00F2E49B /* Resources */,
-				FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */,
 			);
 			path = moedadigital;
 			sourceTree = "<group>";
@@ -115,6 +114,7 @@
 				8298D38E27E3988300F2E49B /* MoedasView.swift */,
 				8298D39627E3B02300F2E49B /* CoinToFavorite.swift */,
 				8298D39727E3B02400F2E49B /* CoinTradeVolume.swift */,
+				FE6BA94227E230AA007357F2 /* CryptoTableViewCell.swift */,
 				8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */,
 			);
 			path = Views;
