@@ -112,6 +112,7 @@
 		8298D35A27D6875300F2E49B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8298D38E27E3988300F2E49B /* MoedasView.swift */,
 				8298D39627E3B02300F2E49B /* CoinToFavorite.swift */,
 				8298D39727E3B02400F2E49B /* CoinTradeVolume.swift */,
 				8298D34527D4505C00F2E49B /* LaunchScreen.storyboard */,
@@ -127,7 +128,6 @@
 				8298D33E27D4505900F2E49B /* TabBarController.swift */,
 				8298D38A27E3981300F2E49B /* MoedasViewController.swift */,
 				8298D38C27E3985000F2E49B /* AdicionadasViewController.swift */,
-				8298D38E27E3988300F2E49B /* MoedasView.swift */,
 				8298D39A27E3E15200F2E49B /* CoinToFavoriteViewController.swift */,
 			);
 			path = Controllers;
