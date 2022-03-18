@@ -77,10 +77,8 @@ class MoedasViewController: UIViewController {
 
 extension MoedasViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewModel = viewModels[indexPath.row]
-        
-        // Ir para a segunda view
-            
+        let coinToFavoriteViewController = CoinToFavoriteViewController()
+        self.present(coinToFavoriteViewController, animated: true, completion: nil)
     }
 }
 
