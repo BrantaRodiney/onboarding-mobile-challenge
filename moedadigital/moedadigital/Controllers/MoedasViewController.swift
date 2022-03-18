@@ -39,7 +39,6 @@ class MoedasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Moeda Digital"
         view.addSubview(tableView)
         view.addSubview(moedas)
         tableView.dataSource = self
@@ -50,7 +49,7 @@ class MoedasViewController: UIViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
-        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = true
         searchController.searchBar.placeholder = "Digite aqui"
         
         configuraConstraints()

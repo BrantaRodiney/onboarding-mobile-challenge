@@ -12,40 +12,35 @@ class MoedasView: UIView {
     lazy var moedaLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-
         label.textColor = .white
-
         label.font = UIFont.systemFont(ofSize: 22)
-
         label.text = "Moeda Digital"
-
         return label
-
     }()
 
 
     lazy var dataLabel: UILabel = {
-
        let dataLabel = UILabel()
-
         dataLabel.translatesAutoresizingMaskIntoConstraints = false
-
         dataLabel.textColor = .white
-
         dataLabel.font = UIFont.systemFont(ofSize: 17)
-
-        dataLabel.text = "4 jan 2020"
-
+        dataLabel.text = "\(getTimeStampDateToString())"
         return dataLabel
 
     }()
+    
+    func getTimeStampDateToString() -> String
+    {
+        let date = Date(timeIntervalSinceNow: 0)
+                let dateFormatter = DateFormatter()
+                dateFormatter.timeZone = TimeZone(abbreviation: "GMT-3")
+                dateFormatter.locale = NSLocale.current
+                dateFormatter.dateFormat = "d MMM YYYY"
+                let strDate = dateFormatter.string(from: date)
+                return strDate
+    }
 
-  
-
-  //Método construtor da classe, toda vez que crio uma nova instancia ele é chamado
-
-  //Dentro dele chamo o metodo para add subviews (configuraView()) e para configurar a posicao dos meus elementos (definirConstraints())
-
+    
   override init(frame: CGRect) {
 
     super.init(frame: frame)
@@ -54,52 +49,23 @@ class MoedasView: UIView {
     definirConstraints()
   }
 
-  //Método construtor da classe, o swift me obriga a implementar ele para caso de algum erro
-
   required init?(coder: NSCoder) {
-
     fatalError("init(coder:) has not been implemented")
-
   }
-
-  
-
-  //Esse método adiciona os labels a minha view
-
-  private func configuraView(){
-
-    self.addSubview(moedaLabel)
-
-    self.addSubview(dataLabel)
-
-  }
-
-
-
-  //método para posicionar os elementos na tela
-
-  private func definirConstraints(){
-
-    NSLayoutConstraint.activate([
-
-      //aqui estou posicionando o label da moeda com uma distancia de 10 do topo da minha view
-
-      moedaLabel.topAnchor.constraint(equalTo: self.topAnchor,constant: 80),
-
-      moedaLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-
     
 
-      //aqui estou posicionando a label da data em relacao ao label de cima (moedaLabel). Estou dizendo que ele
-
-      //vai ter uma distancia de 10 em relacao ao label de cima
-
-      dataLabel.topAnchor.constraint(equalTo: self.moedaLabel.bottomAnchor, constant: 10),
-
-      dataLabel.centerXAnchor.constraint(equalTo: self.moedaLabel.centerXAnchor)
-
-    ])
-
+  private func configuraView()
+    {
+    self.addSubview(moedaLabel)
+    self.addSubview(dataLabel)
   }
 
+  private func definirConstraints(){
+    NSLayoutConstraint.activate([
+      moedaLabel.topAnchor.constraint(equalTo: self.topAnchor,constant: 80),
+      moedaLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+      dataLabel.topAnchor.constraint(equalTo: self.moedaLabel.bottomAnchor, constant: 10),
+      dataLabel.centerXAnchor.constraint(equalTo: self.moedaLabel.centerXAnchor)
+    ])
+  }
 }
