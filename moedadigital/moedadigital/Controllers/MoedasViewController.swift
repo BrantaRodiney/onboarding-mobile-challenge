@@ -5,25 +5,43 @@
 //  Created by Rodiney Branta on 17/03/22.
 //
 
+
 import UIKit
 
 class MoedasViewController: UIViewController {
     
-    let moedas: MoedasView = {
-        let view = MoedasView()
-        view.translatesAutoresizingMaskIntoConstraints = false
+    let moedas : MoedasView =
+    {
+        @UseAutoLayout var view = MoedasView()
+        view.backgroundColor = UIColor.black
         return view
     }()
     
-    // criando o SearchBar
-    let searchController = UISearchController(searchResultsController: nil)
-    
-    private let tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(CryptoTableViewCell.self,
-                           forCellReuseIdentifier: CryptoTableViewCell.identifier)
+    private let tableView: UITableView =
+    {
+        @UseAutoLayout var tableView = UITableView()
+        tableView.register(CryptoTableViewCell.self, forCellReuseIdentifier: CryptoTableViewCell.identifier)
         return tableView
     }()
+    
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    private func searchBar()
+    {
+        searchController.dimsBackgroundDuringPresentation = false
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.placeholder = "Digite aqui"
+    }
+    
+    private func setMoedasNavigationBar()
+    {
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor(red: 25/255.0, green: 24/255.0, blue: 25/255.0, alpha: 1)
+        navigationItem.setTitle(title: "Moeda Digital", subtitle: "\(getTimeStampDateToString())")
+    }
     
     private var viewModels = [CryptoTableViewCellViewModel]()
     
@@ -37,23 +55,32 @@ class MoedasViewController: UIViewController {
         return formatter
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func getTimeStampDateToString() -> String
+    {
+        let date = Date(timeIntervalSinceNow: 0)
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT-3")
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.dateFormat = "d MMM YYYY"
+        let strDate = dateFormatter.string(from: date)
+        return strDate
+    }
+    
+    private func setMoedas()
+    {
+        setMoedasNavigationBar()
         view.addSubview(tableView)
-        view.addSubview(moedas)
+        tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.delegate = self
-        
-        getDataFromApi()
-        
-        searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
-        self.navigationController?.isNavigationBarHidden = true
-        searchController.searchBar.placeholder = "Digite aqui"
-        
-        configuraConstraints()
-
+        searchBar()
+        getDataFromApi()
+        }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setMoedas()
     }
     
     override func viewDidLayoutSubviews() {
@@ -61,18 +88,8 @@ class MoedasViewController: UIViewController {
         tableView.frame = view.bounds
         tableView.backgroundColor = .black
     }
-    
-    func configuraConstraints() {
-        NSLayoutConstraint.activate([
-            moedas.topAnchor.constraint(equalTo: self.view.topAnchor),
-            moedas.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-            moedas.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-            moedas.heightAnchor.constraint(equalToConstant: 150)
-        
-        ])
-    }
-    
 }
+
 
 extension MoedasViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -81,22 +98,18 @@ extension MoedasViewController: UITableViewDelegate {
     }
 }
 
-extension MoedasViewController: UITableViewDataSource {
-    // Table View
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension MoedasViewController: UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return viewModels.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: CryptoTableViewCell.identifier,
-            for: indexPath
-        )as? CryptoTableViewCell else {
-            fatalError()
-        }
+            withIdentifier: CryptoTableViewCell.identifier, for: indexPath)as? CryptoTableViewCell else {fatalError()}
         cell.configure(with: viewModels[indexPath.row])
-        
         return cell
     }
     

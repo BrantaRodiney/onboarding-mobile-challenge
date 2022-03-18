@@ -64,7 +64,7 @@ class CoinToFavorite: UIView
     func setCoinLabel()
     {
         self.addSubview(coinLabel)
-        coinLabel.text = "CoinNameHere"
+        coinLabel.text = "BTC"
         coinLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         coinLabel.textAlignment = .center
         coinLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 40).isActive = true
@@ -84,7 +84,7 @@ class CoinToFavorite: UIView
     func setCoinLabelValue()
     {
         self.addSubview(coinLabelValue)
-        coinLabelValue.text = "Currency/Value"
+        coinLabelValue.text = "$ 28,999.80"
         coinLabelValue.font = UIFont.systemFont(ofSize: 32)
         coinLabelValue.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         coinLabelValue.textAlignment = .center
